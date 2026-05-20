@@ -1,0 +1,146 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty",
+    "source": "$HOME/Pictures/autismarch.png",
+    "width": 40,
+    "height": 19,
+    "padding": {
+      "top": 3,
+      "left": 3,
+      "right": 3,
+      "bottom": 2
+    }
+  },
+  "display": {
+    "separator": "",
+    "constants": [
+      "──────────────"
+    ],
+    "key": {
+      "width": 10
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[30m┌────────────────────── SPECS ───────────────────────┐"
+    },
+    {
+      "type": "host",
+      "key": "PC",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "CPU",
+      "key": "CPU",
+      "showPeCoreCount": false,
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "memory",
+      "key": "MEMORY",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "disk",
+      "key": "DISK",
+      "keyColor": "30",
+      "format": "{1} / {2} ({3}) - {9}",
+      "outputColor": "30"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[30m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[30m┌──────────────────────── OS ────────────────────────┐"
+    },
+    {
+      "type": "os",
+      "key": "DISTRO",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "kernel",
+      "key": "KERNEL",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "gpu",
+      "key": "DRIVER",
+      "keyColor": "30",
+      "outputColor": "30",
+      "format": "{driver}"
+    },
+    {
+      "type": "packages",
+      "key": "PACKAGES",
+      "managers": ["pacman"],
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "terminal",
+      "key": "TERMINAL",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "shell",
+      "key": "SHELL",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[30m└────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[30m┌────────────────────── DESKTOP ─────────────────────┐"
+    },
+    {
+      "type": "de",
+      "key": "DE",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "wm",
+      "key": "WM",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "wmtheme",
+      "key": "THEME",
+      "keyColor": "30",
+      "outputColor": "30"
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[30m└────────────────────────────────────────────────────┘"
+    },
+    {
+      "type": "colors",
+      "paddingLeft": 20,
+      "symbol": "circle"
+    }
+  ]
+}
