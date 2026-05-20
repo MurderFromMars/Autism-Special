@@ -126,7 +126,7 @@ install_arch_dependencies() {
     log "installing arch dependencies…"
     sudo pacman -S --needed --noconfirm \
         git cmake extra-cmake-modules base-devel unzip cava \
-        kitty fastfetch imagemagick >/dev/null 2>&1
+        kitty fastfetch imagemagick ttf-jetbrains-mono >/dev/null 2>&1
 
     if command -v yay >/dev/null 2>&1; then
         yay -S --needed --noconfirm qt5-tools >/dev/null 2>&1
@@ -757,9 +757,9 @@ apply_kde_theme_settings() {
 
     if command -v kwriteconfig6 >/dev/null 2>&1; then
         # Set custom accent color (#fa1bf8)
-        kwriteconfig6 --file kdeglobals --group General --key AccentColor "250,27,248"
+        kwriteconfig6 --file kdeglobals --group General --key AccentColor "242,205,207"
         kwriteconfig6 --file kdeglobals --group General --key ColorSchemeHash ""
-        ok "accent color → #fa1bf8"
+        ok "accent color → #f2cdcf"
 
         kwriteconfig6 --file kdeglobals --group Icons --key Theme "kora"
         ok "icon theme activated → kora"
